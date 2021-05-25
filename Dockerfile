@@ -33,9 +33,9 @@ RUN apk del .tmp-build-deps
 
 # Create an app folder, make it the default work directory and copy the
 # app folder on the local machine to the docker image
-RUN mkdir /app
-WORKDIR /app
-COPY ./app /app
+RUN mkdir /tutorial
+WORKDIR /tutorial
+COPY ./tutorial /tutorial
 
 # Create a user (named "user") for running applications only (-D).
 # This is for security purposes.
